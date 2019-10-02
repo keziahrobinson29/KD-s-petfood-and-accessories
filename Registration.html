@@ -1,0 +1,113 @@
+<html>
+<!---------CSS/Title----->
+<link rel="stylesheet" href="CSS.css">
+<title>KD's Pet Food and Accessories</title>
+<!-------Head------------>
+<center>
+<div class="Head">
+<head>
+KD's Pet Food and Accessories
+</head>
+</div>
+</center>
+<!-------Javascript----->
+<script>
+function Register()
+{
+if (document.getElementById("txtName").value==""){alert("Please Fill in Name");}
+if (document.getElementById("txtSurname").value==""){alert("Please Fill in Surname");}
+if (document.getElementById("txtUsernameReg").value==""){alert("Please Fill in Username");}
+if (document.getElementById("txtEmail").value==""){alert("Please Fill in Email");}
+if (document.getElementById("txtName").value=="admin" && document.getElementById("txtSurname").value=="admin" && document.getElementById("txtUsernameReg").value=="admin" && document.getElementById("txtEmail").value=="admin@gmail.com")
+{window.location="MainPage.html"}
+else{alert("Please Fill In the Requested Fields Properly")}
+
+
+}
+function BackToLogin()
+{
+window.location="Login.html"
+}
+</script>
+<!---------Spacing------->
+<br>
+<br>
+<br>
+<br>
+
+<div class="Body">
+<body>
+<br>
+<br>
+<br>
+<br>
+<!---------Table2/Registration------>
+<center>
+<div class="flip-box">
+<div class="flip-box-inner">
+<div class="flip-box-front">
+<img src="Dog-Face.png" width="100" height="100"/>
+<h3>SIGN UP</h3>
+<p>Become A Member Today &#x1F432;</p>
+</div>
+
+<div class="flip-box-back">
+
+<div class="Table2">
+<table cellpadding="0px" cellspacing="10px" align="center">
+
+<tr>
+<td><h2>Registration</h2></td>
+</tr>
+
+<tr>
+<td><label for="Name">Name:</label></td>
+<td><input type="textbox" id="txtName" name="Name"></td>
+</tr>
+
+<tr>
+<td><label for="Surname">Surname:</label></td>
+<td><input type="textbox" id="txtSurname" name="Surname"></td>
+</tr>
+
+<tr>
+<td><label for="UsernameReg">Username:</label></td>
+<td><input type="textbox" id="txtUsernameReg" name="UsernameReg"></td>
+</tr>
+
+<tr>
+<td><label for="Email">Email:</label></td>
+<td><input type="textbox" id="txtEmail" name="Email"></td>
+</tr>
+
+<tr>
+<td><label for="Gender">Gender:</label></td>
+<td>
+<input type="checkbox" name="gender1" value="gender1"> Male<br>
+<input type="checkbox" name="gender2" value="gender2"> Female<br>
+<input type="checkbox" name="gender3" value="gender3" checked> Other<br>
+</td>
+</tr>
+
+<tr>
+<td><input type="button" id="btnSubmit" value="Register" onclick="Register()"</></td>
+<td><input type="button" id="btnSubmit" value="Back to Login" onclick="BackToLogin()"</>
+</tr>
+</table>
+</div>
+</center>
+
+</div>
+</div>
+</div>
+
+</body>
+</div>
+
+<!-------Footer--------->
+<div class="footer">
+<footer><hr>
+© 2019 Copyright
+</footer>
+</div>
+</html>

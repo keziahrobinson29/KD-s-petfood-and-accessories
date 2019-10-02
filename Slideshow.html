@@ -1,0 +1,70 @@
+<html>
+<!---------CSS/Title----->
+<link rel="stylesheet" href="CSS3.css">
+<title>KD's Pet Food and Accessories</title>
+<!-------Head------------>
+<center>
+<div class="Head">
+<head>
+KD's Pet Food and Accessories
+</head>
+<div class="LoginImg">
+<a href="Login.html"><img src="logout-icon-png-3.jpg" width="50px" height="50px"></a>
+</div>
+</div>
+<br>
+<br>
+</center>
+<!------Navigation----->
+<center>
+
+<table cellpadding="10px" class="Navigation">
+<tr>
+<td>
+<a href="MainPage.html">Shop</a>
+</td>
+<td>
+<a href="Slideshow.html">Slideshow</a>
+</td>
+<td>
+<a href="Search.html">Search</a>
+</td>
+</tr>
+</table>
+</center>
+
+<!------Javascript----->
+<script>
+var ImageArray=["Image1.jpg","Image2.jpg","Image3.jpg","Image4.jpg","Image5.jpg","Image6.jpg","Image7.jpg","Image8.jpg","Image9.jpg","Image10.jpg",];
+var i=0;
+
+function ImageChange()
+{
+
+document.getElementById('FirstImage').src=ImageArray[i];
+if(i < ImageArray.length - 1){i++;}
+else{i=0;}
+
+setTimeout("ImageChange()",2000);
+
+}
+</script>
+<br>
+<br>
+<table align="center">
+<tr>
+<td>
+<div class="Image">
+<img id="FirstImage" src="" alt=""  width="820x" height="400px">
+</td>
+</tr>
+</table>
+<script>ImageChange();</script>
+
+<!-------Footer--------->
+<div class="footer">
+<footer><hr>
+© 2019 Copyright
+</footer>
+</div>
+</html>

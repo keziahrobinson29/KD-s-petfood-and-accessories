@@ -1,0 +1,79 @@
+<html>
+<!---------CSS/Title----->
+<link rel="stylesheet" href="CSS4.css">
+<title>KD's Pet Food and Accessories</title>
+<!-------Head------------>
+<center>
+<div class="Head">
+<head>
+KD's Pet Food and Accessories
+</head>
+<div class="LoginImg">
+<a href="Login.html"><img src="logout-icon-png-3.jpg" width="50px" height="50px"></a>
+</div>
+</div>
+<br>
+<br>
+</center>
+<!------Navigation----->
+<center>
+
+<table cellpadding="10px" class="Navigation">
+<tr>
+<td>
+<a href="MainPage.html">Shop</a>
+</td>
+<td>
+<a href="Slideshow.html">Slideshow</a>
+</td>
+<td>
+<a href="Search.html">Search</a>
+</td>
+</tr>
+</table>
+</center>
+
+<!------Javascript----->
+<script>
+
+function SearchButton()
+{
+if(document.getElementById("TextBox").value=="Hills"){window.location="MainPage.html"}
+
+if(document.getElementById("TextBox").value=="Eukanuba"){window.location="MainPage.html"}
+
+if(document.getElementById("TextBox").value=="Montego"){window.location="MainPage.html"}
+
+if(document.getElementById("TextBox").value=="Whiskas"){window.location="MainPage.html"}
+
+if(document.getElementById("TextBox").value=="Slideshow"){window.location="Slideshow.html"}
+
+
+
+
+}
+</script>
+<br>
+<br>
+<table align="center">
+<tr>
+<td>
+
+<div class="search-box" >
+<input type="text" class="search-txt" id="TextBox" placeholder="Type to Search" >
+<a class="search-btn" href="#"></a>
+<input type="image" src="105498-200.png" id="SearchImg" height="30px" width="30px"  onclick="SearchButton()">
+
+</div>
+
+</td>
+</tr>
+
+</table>
+<!-------Footer--------->
+<div class="footer">
+<footer><hr>
+© 2019 Copyright
+</footer>
+</div>
+</html>

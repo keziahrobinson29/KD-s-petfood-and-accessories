@@ -1,0 +1,261 @@
+<html>
+<!---------CSS/Title----->
+<link rel="stylesheet" href="CSS2.css">
+<title>KD's Pet Food and Accessories</title>
+<!-------Head------------>
+<center>
+<div class="Head">
+<head>
+KD's Pet Food and Accessories
+</head>
+<div class="LoginImg">
+<a href="Login.html"><img src="logout-icon-png-3.jpg" width="50px" height="50px"></a>
+</div>
+</div>
+<br>
+<br>
+</center>
+<!------Navigation----->
+<center>
+
+<table cellpadding="10px" class="Navigation">
+<tr>
+<td>
+<a href="MainPage.html">Shop</a>
+</td>
+<td>
+<a href="Slideshow.html">Slideshow</a>
+</td>
+<td>
+<a href="Search.html">Search</a>
+</td>
+</tr>
+</table>
+</center>
+
+
+<!-------Javascript----->
+<script>
+function CAL()
+{
+
+HillsCat2kgg=parseFloat(document.getElementById("HillsCat2kg").value);
+HillsCat5kgg=parseFloat(document.getElementById("HillsCat5kg").value);
+HillsDog2kgg=parseFloat(document.getElementById("HillsDog2kg").value);
+HillsDog5kgg=parseFloat(document.getElementById("HillsDog5kg").value);
+EukCat2kgg=parseFloat(document.getElementById("EukCat2kg").value);
+EukCat5kgg=parseFloat(document.getElementById("EukCat5kg").value);
+EukDog2kgg=parseFloat(document.getElementById("EukDog2kg").value);
+EukDog5kgg=parseFloat(document.getElementById("EukDog5kg").value);
+MonCat2kgg=parseFloat(document.getElementById("MonCat2kg").value);
+MonCat5kgg=parseFloat(document.getElementById("MonCat5kg").value);
+MonDog2kgg=parseFloat(document.getElementById("MonDog2kg").value);
+MonDog5kgg=parseFloat(document.getElementById("MonDog5kg").value);
+WhisCat2kgg=parseFloat(document.getElementById("WhisCat2kg").value);
+WhisCat5kgg=parseFloat(document.getElementById("WhisCat5kg").value);
+
+Total=(HillsCat2kgg*300)+(HillsCat5kgg*400)+(HillsDog2kgg*350)+(HillsDog5kgg*500)+(EukCat2kgg*300)+(EukCat5kgg*450)+(EukDog2kgg*350)+(EukDog5kgg*500)+(MonCat2kgg*300)+(MonCat5kgg*450)+(MonDog2kgg*350)+(MonDog5kgg*500)+(WhisCat2kgg*300)+(WhisCat5kgg*450)
+
+document.getElementById("txtResult1").value=Total;
+}
+
+function Reset()
+{
+window.location="MainPage.html"
+}
+</script>
+<!---------Spacing------->
+<br>
+<br>
+
+<div class="Body">
+<body>
+<!-------Table------->
+<table id="foods" align="center" cellpadding="40px" cellspacing="45px">
+<tr>
+<td>
+<div class="flip-box">
+<div class="flip-box-inner">
+<div class="flip-box-front">
+<img src="HIll's_Pet_Nutrition_logo.png" width="100%" height="100%"/>
+
+</div>
+<div class="flip-box-back">
+
+
+<h2>Hill's Science Diet</h2>
+  <video id="hills" width="300" height="180" controls>
+    <source src="hills.mp4" type="video/mp4">
+
+</div>
+
+</div>
+</div>
+
+
+</td>
+<td>
+<div class="flip-box">
+<div class="flip-box-inner">
+<div class="flip-box-front">
+<img src="Eukanuba_logo.jpg" width="100%" height="100%"/>
+
+</div>
+<div class="flip-box-back">
+
+<h1>Eukenuba</h1>
+  <video id="eukenuba" width="300" height="180" controls>
+    <source src="eukenuba.mp4" type="video/mp4">
+</div>
+</div>
+</div>
+
+</tr>
+
+<tr>
+
+<td class="Input1">
+<center><table></center>
+<tr>
+<td>
+<center><label><h2>Cat</h2></label></center>
+<center><input type="textbox" value="0" id="HillsCat2kg"/>2kg Bag (R300)<br>
+<input type="textbox" value="0" id="HillsCat5kg"/>5kg Bag (R450)</br></center>
+
+<center><label><h2>Dog</h2></label></center>
+<center><input type="textbox" value="0" id="HillsDog2kg"/>2kg Bag (R350)<br>
+<input type="textbox" value="0" id="HillsDog5kg"/>5kg Bag (R500)</center>
+</td>
+</tr>
+</table>
+</td>
+
+<td class="Input2">
+<center><table></center>
+<tr>
+<td>
+
+<center><label><h2>Cat</h2></label></center>
+<center><input type="textbox" value="0" id="EukCat2kg"/>2kg Bag (R300)<br>
+<input type="textbox" value="0" id="EukCat5kg"/>5kg Bag (R450)</br></center>
+
+<center><label><h2>Dog</h2></label></center>
+<center><input type="textbox" value="0" id="EukDog2kg"/>2kg Bag (R350)<br>
+<input type="textbox" value="0" id="EukDog5kg"/>5kg Bag (R500)</center>
+</td>
+</tr>
+</table>
+</td>
+
+</tr>
+<tr>
+<td>
+<div class="flip-box">
+<div class="flip-box-inner">
+<div class="flip-box-front">
+<img src="montego-logo-min.png" width="100%" height="100%"/>
+
+</div>
+<div class="flip-box-back">
+
+<h1>Montego</h1>
+  <video id="montego" width="300" height="180" controls>
+    <source src="montego.mp4" type="video/mp4">
+</div>
+</div>
+</div>
+
+</td>
+
+<td>
+<div class="flip-box">
+<div class="flip-box-inner">
+<div class="flip-box-front">
+<img src="whiskersdf.jpg" width="100%" height="100%"/>
+
+</div>
+<div class="flip-box-back">
+
+<h1>Whiskers</h1>
+  <video id="whiskers" width="300" height="180" controls>
+    <source src="whiskers.mp4" type="video/mp4">
+</div>
+</div>
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+<center><table class="Input3"></center>
+<tr>
+<td>
+<center><label><h2>Cat</h2></label></center>
+<center><input type="textbox" value="0" id="MonCat2kg"/>2kg Bag (R300)<br>
+<input type="textbox" value="0" id="MonCat5kg"/>5kg Bag (R450)</br></center>
+
+
+<center><label><h2>Dog</h2></label></center>
+<center><input type="textbox" value="0" id="MonDog2kg"/>2kg Bag (R350)<br>
+<input type="textbox" value="0" id="MonDog5kg"/>5kg Bag (R500)</center>
+</td>
+</tr>
+</table>
+</td>
+<td>
+<center><table class="Input4"></center>
+<tr>
+<td>
+<center><label><h2>Cat</h2></label></center>
+
+<center><input type="textbox" value="0" id="WhisCat2kg"/>2kg Bag (R300)<br>
+<input type="textbox" value="0" id="WhisCat5kg"/>5kg Bag (R450)</br></center> 
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+ 
+
+<div id="holder">
+
+<div class="button" onclick="CAL()">
+<p class="btnText">CHECK OUT?</p>
+<div class="btnTwo">
+<p class="btnText2"> &#x1F431;</p>
+</div>
+</div>
+Total:<input type="textbox" id="txtResult1" name="Result" >
+<div type="button" class="button" onclick="Reset()">
+<p class="btnText">RESET</p>
+<div class="btnTwo">
+<p class="btnText2">&#128054;</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</div>
+
+<!-------Footer--------->
+<div class="footer">
+<footer><hr>
+© 2019 Copyright
+</footer>
+</div>
+</html>

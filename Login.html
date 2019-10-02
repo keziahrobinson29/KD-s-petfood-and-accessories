@@ -1,0 +1,124 @@
+<html>
+<!---------CSS/Title----->
+<link rel="stylesheet" href="CSS.css">
+<title>KD's Pet Food and Accessories</title>
+<!-------Head------------>
+<center>
+<div class="Head">
+<head>
+KD's Pet Food and Accessories
+</head>
+</div>
+</center>
+<!-------Javascript----->
+<script>
+function Login()
+{
+if (document.getElementById("txtUsername").value==""){alert("Please Fill in Username");}
+if (document.getElementById("txtPassword").value==""){alert("Please Fill in Password");}
+if (document.getElementById("txtUsername").value=="admin" && document.getElementById("txtPassword").value=="admin")(window.location="MainPage.html")
+else {alert("Incorrect Username or Password")};
+
+}
+
+function Register()
+{
+window.location="Registration.html"
+}
+</script>
+<!---------Spacing------->
+<br>
+<br>
+<br>
+<br>
+
+<div class="Body">
+<body>
+<!-------Table1/Login------->
+<center>
+<div class="flip-box">
+<div class="flip-box-inner">
+
+<div class="flip-box-front">
+<img src="Rabbit_Face_Emoji_large.png" width="100px" height="100px"/>
+<h3>LOGIN</h3>
+<p><h3>Welcome back &#x1F431; </h3></p>
+
+</div>
+
+<div class="flip-box-back">
+
+<div class="Table1">
+<table cellpadding="0px" cellspacing="10px" align="center">
+
+<tr>
+<td><h2>Login</h2></td>
+</tr>
+
+
+<tr>
+<td><label for="Username">Username:</label></td>
+<td><input type="textbox" id="txtUsername" name="Username"></td>
+</tr>
+
+<tr>
+<td><label for="Password">Password:</label></td>
+<td><input type="textbox" id="txtPassword" name="Password"></td>
+</tr>
+
+<tr>
+<td><input type="button" id="btnSubmit" value="Login" onclick="Login()"</></td>
+</tr>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+</center>
+<br>
+<br>
+<br>
+
+<!---------Table2/Registration------>
+<center>
+<div class="Table2">
+<table cellpadding="0px" cellspacing="10px" align="center">
+
+<tr>
+<td><h2> Not Registered?</h2></td>
+</tr>
+
+<tr>
+<td><input type="button" id="btnSubmit" value="Registration Page" onclick="Register()"</></td>
+</tr>
+
+</table>
+</div>
+</center>
+<br>
+<br>
+<center>
+<div class="AboutUs">
+
+<h3>Why Beome A Member?</h3>
+<p>Becoming a member gives you the many benefits such as 15% discount on each purchase over R600 and a 50% discount on your 10th purchase from our website.</p>
+<p>As members you recieve first notice to any deals or new products for your little friends which include vouchers and discounts to services provided by vetenary clinics.</p>   
+
+<h3>What else do we offer?</h3>
+<p>In our news section we show notices made by our members, we help owners post if their little buddies </p><p>get misplaced and we post changes to the website as 
+well as all specials we have for our members</p>
+
+</div>
+</center>
+
+</body>
+</div>
+
+<!-------Footer--------->
+<div class="footer">
+<footer><hr>
+© 2019 Copyright
+</footer>
+</div>
+</html>
